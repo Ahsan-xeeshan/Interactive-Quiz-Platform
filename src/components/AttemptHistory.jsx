@@ -12,10 +12,12 @@ const AttemptHistory = ({ localAttempts }) => {
   return (
     <div className="p-4 bg-gray-100 rounded-lg mt-6">
       <div className="text-center">
-        <h3 className="text-lg font-bold mb-2">Your Last Attempts</h3>
+        <h3 className="text-xl font-bold mb-2">Your Last Attempts</h3>
       </div>
       {localAttempts.length === 0 && dbAttempts.length === 0 ? (
-        <p>No attempts yet.</p>
+        <div className="text-center">
+          <p className="text-lg">No attempts yet.</p>
+        </div>
       ) : (
         <>
           <div className="grid grid-cols-2 gap-x-5">
