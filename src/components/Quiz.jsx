@@ -92,11 +92,11 @@ const Quiz = () => {
                 Restart Quiz
               </button>
               {score >= 7 ? (
-                <div className="mt-5 h-36 w-[300px] mx-auto">
+                <div className="mt-5 h-36 md:w-[300px] mx-auto">
                   <img src={GoodJob} alt="Good Job" className="w-full h-full" />
                 </div>
               ) : (
-                <div className="mt-5 h-36 w-[250px] mx-auto">
+                <div className="mt-5 h-36 md:w-[250px] mx-auto">
                   <img
                     src={TryAgain}
                     alt="Good Job"
